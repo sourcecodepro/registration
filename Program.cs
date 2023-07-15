@@ -1,7 +1,33 @@
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+// builder.Services.AddRazorPages()
+//     .AddRazorRuntimeCompilation();
+
+// builder.Services.AddAuthentication().AddCookie("UserCookieAuth", options => {
+//     options.Cookie.Name = "UserCookieAuth";
+
+// });
+
+//authenticates without specifying addauthentication parameter
+builder.Services.AddAuthentication("UserCookieAuth").AddCookie("UserCookieAuth", options => {
+    options.Cookie.Name = "UserCookieAuth";
+    options.LoginPath = "/User/Login";
+    options.AccessDeniedPath = "/User/AccessDenied";
+    options.ExpireTimeSpan = TimeSpan.FromHours(12);
+
+});
+
+builder.Services.AddAuthorization(options => {
+
+    options.AddPolicy("AdminsOnly", policy => 
+        policy.RequireClaim("Role", "Admin"));
+
+});
+
 
 var app = builder.Build();
 
@@ -17,6 +43,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+//authenticates without UseAuthentication() declaration
+app.UseAuthentication();
 
 app.UseAuthorization();
 
