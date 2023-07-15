@@ -28,12 +28,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/dcdevio/Source/Repos/registration/Pages/Shared/_LoginStatusPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Mb2dpblN0YXR1c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/dcdevio/Source/Repos/registration/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/dcdevio/Source/Repos/registration/Pages/User/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9BY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/dcdevio/Source/Repos/registration/Pages/User/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9BZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/dcdevio/Source/Repos/registration/Pages/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/dcdevio/Source/Repos/registration/Pages/User/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9Mb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/dcdevio/Source/Repos/registration/Pages/_ViewImports.cshtml]
